@@ -1,4 +1,4 @@
-// import { peoples } from "./data.js";
+// import { peoples2 } from "./data.js";
 
 const peoples = {
   0: {

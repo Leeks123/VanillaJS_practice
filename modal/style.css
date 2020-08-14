@@ -1,0 +1,82 @@
+body {
+  background-color: thistle;
+}
+
+.wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  margin: 30% auto;
+}
+.wrapper h1 {
+  margin: 0;
+  text-align: center;
+  padding: 2rem 0;
+}
+.wrapper button {
+  width: 150px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 2rem auto;
+  background-color: skyblue;
+  color: white;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+.wrapper button:hover {
+  background-color: white;
+  color: skyblue;
+  border: 3px solid skyblue;
+}
+
+/* ====================== */
+.modal {
+  display: none;
+}
+.modal_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  opacity: 0.5;
+  z-index: 0;
+}
+.modal_box {
+  background-color: red;
+  box-shadow: 5px 5px 10px gray;
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 1;
+}
+.modal_title {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  margin-top: -14px;
+}
+.modal_close {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  background-image: url("https://www.clipartmax.com/png/middle/307-3077324_x-mark-cross-computer-icons-clip-art-red-cross-icon.png");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  position: relative;
+  top: -23px;
+  left: 90%;
+}
